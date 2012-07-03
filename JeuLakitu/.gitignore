@@ -1,0 +1,15 @@
+*.class
+.DS_Store
+.git
+test/*
+work/*
+target/*
+.settings/*
+*~
+.project
+.classpath
+jester*
+*.html
+makeWebView.py
+*.iml
+.idea
