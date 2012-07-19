@@ -1,7 +1,11 @@
 package com.mojang.mario.sprites;
 
+import ca.uqam.info.runtime.LTLFOWatcher;
+
 import com.mojang.mario.Art;
 import com.mojang.mario.LevelScene;
+import com.mojang.mario.MonitorTimer;
+
 import java.awt.Graphics;
 
 
@@ -99,16 +103,20 @@ public class Enemy extends Sprite
                         if (type == Enemy.ENEMY_RED_KOOPA)
                         {
                             spriteContext.addSprite(new Shell(world, x, y, 0));
+                            MonitorTimer.Instance().updateWatchers("<action>CatchShell</action>");
                         }
                         else if (type == Enemy.ENEMY_GREEN_KOOPA)
                         {
                             spriteContext.addSprite(new Shell(world, x, y, 1));
+                            MonitorTimer.Instance().updateWatchers("<action>CatchShell</action>");
                         }
                     }
                 }
                 else
                 {
                     world.mario.getHurt();
+                	MonitorTimer.Instance().updateWatchers("<action>CollisionEnemy</action>");
+                	
                 }
             }
         }

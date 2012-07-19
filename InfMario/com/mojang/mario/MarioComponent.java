@@ -6,10 +6,13 @@ import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.image.*;
+import java.io.IOException;
 import java.util.Random;
 
 import javax.sound.sampled.LineUnavailableException;
 import javax.swing.*;
+
+import ca.uqam.info.runtime.LTLFOWatcher;
 
 import com.mojang.mario.sprites.*;
 import com.mojang.sonar.FakeSoundEngine;
@@ -146,10 +149,11 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
         boolean naiveTiming = true;
 
         toTitle();
-
+        MonitorTimer.Instance().resetMonitors();
         while (running)
         {
-        	long debutTime = System.nanoTime();
+        	long timeDebut = System.nanoTime();
+        	//MonitorTimer.Instance().getWatcher().update("<actions>");
         	
             double lastTime = time;
             time = System.nanoTime() / 1000000000.0;
@@ -228,8 +232,14 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
             catch (InterruptedException e)
             {
             }
-            long finTime = System.nanoTime();
-            MonitorTimer.Instance().addExecTime(finTime - debutTime);
+            
+            MonitorTimer.Instance().getOutcomes();
+            	 
+            //MonitorTimer.Instance().resetMonitors();
+            
+            long timeFin = System.nanoTime();
+            MonitorTimer.Instance().addExecTime(timeFin - timeDebut);
+            
         }
 
         Art.stopMusic();

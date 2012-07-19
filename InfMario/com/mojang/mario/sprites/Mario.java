@@ -65,9 +65,6 @@ public class Mario extends Sprite
 
     public Sprite carried = null;
     private static Mario instance;
-    
-    private long debutTime;
-    private long finTime;
 
     public Mario(LevelScene world)
     {
@@ -80,7 +77,6 @@ public class Mario extends Sprite
         facing = 1;
         setLarge(Mario.large, Mario.fire);
         
-        //MonitorTimer.Instance().getWatcher().
     }
     
     private boolean lastLarge;
@@ -216,9 +212,7 @@ public class Mario extends Sprite
 
         if (keys[KEY_JUMP] || (jumpTime < 0 && !onGround && !sliding))
         {
-        	debutTime = System.nanoTime();
-        	MonitorTimer.Instance().getWatcher().update("<actions><action>jump</action></actions>");
-        	finTime = System.nanoTime();
+        	MonitorTimer.Instance().updateWatchers("<action>Jump</action>");
         	
             if (jumpTime < 0)
             {
@@ -362,12 +356,7 @@ public class Mario extends Sprite
             }
         }
         
-        debutTime = System.nanoTime();
-        if (MonitorTimer.Instance().getWatcher().getOutcome() == LTLFOWatcher.Outcome.FALSE)
-        	 System.out.println(MonitorTimer.Instance().getWatcher().getOutcome());
-        MonitorTimer.Instance().getWatcher().reset();
-        finTime = System.nanoTime();
-        MonitorTimer.Instance().addTime(finTime - debutTime);
+        
     }
 
     private void calcPic()
