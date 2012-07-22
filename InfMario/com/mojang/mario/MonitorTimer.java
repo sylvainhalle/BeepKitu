@@ -6,6 +6,9 @@ import ca.uqam.info.runtime.*;
 
 import java.util.Iterator;
 import java.util.Vector;
+import java.awt.Graphics;
+import java.awt.Color;
+import java.text.DecimalFormat;;
 
 
 
@@ -43,9 +46,11 @@ public class MonitorTimer {
 	   {
 		  debutTime = System.nanoTime();
 		   
-		  formulas.add(LTLStringParser.parseFromString("G ([m /action] (!((m) = ({Jump}))))"));
-		  //formulas.add(LTLStringParser.parseFromString("G ([m /action] (!((m) = ({CollisionEnemy}))))"));
-		  formulas.add(LTLStringParser.parseFromString("G ([x1 /action] (((x1) = ({CatchShell})) -> (X ([x2 /action] (!((x2) = ({CollisionEnemy})))))))"));
+		  formulas.add(LTLStringParser.parseFromString("G ([m /action/name] (!((m) = ({Jump}))))"));
+		  formulas.add(LTLStringParser.parseFromString("G ([m /action/name] (!((m) = ({CollisionEnemy}))))"));
+		  formulas.add(LTLStringParser.parseFromString("G ([x1 /action/name] (((x1) = ({HaveShell})) -> (X ([x2 /action/name] (!((x2) = ({CollisionEnemy})))))))"));
+		  formulas.add(LTLStringParser.parseFromString("G ([m /action/jumpHeight] (!((m) < ({20}))))"));
+		  formulas.add(LTLStringParser.parseFromString("F ([m /action/name] ((m) = ({Jump})))"));
 		  
 		  Iterator<Operator> itr = formulas.iterator();
 		  
@@ -93,21 +98,30 @@ public class MonitorTimer {
 		   addTime(finTime - debutTime);
 	   }
 	   
-	   public void getOutcomes()
+	   public void getOutcomes(Graphics g)
 	   {
+		   debutTime = System.nanoTime();
+		   
 		   Iterator<SymbolicWatcher> itr = monitors.iterator();
 		   SymbolicWatcher current;
+		   int positionXmodif = 0;
 		   
 		   while(itr.hasNext())
 		   {
 			   current = itr.next();
-			   if (current.getOutcome() == LTLFOWatcher.Outcome.FALSE)
+			   switch(current.getOutcome())
 			   {
-				   System.out.print(current.getOutcome().toString());
-				   System.out.println();
+			   case TRUE: g.setColor(Color.green); g.fillOval(10 + positionXmodif,220,10,10); g.setColor(Color.black); g.drawOval(10 + positionXmodif,220,10,10); break;
+			   case FALSE: g.setColor(Color.red); g.fillOval(10 + positionXmodif,220,10,10); g.setColor(Color.black); g.drawOval(10 + positionXmodif,220,10,10); break;
+			   case INCONCLUSIVE: g.setColor(Color.yellow); g.fillOval(10 + positionXmodif,220,10,10); g.setColor(Color.black); g.drawOval(10 + positionXmodif,220,10,10); break; 
 			   }
+			   positionXmodif += 12;
 		   }
+		   
+		   finTime = System.nanoTime();
+		   addTime(finTime - debutTime);
 	   }
+	   
 	   
 	   public void resetMonitors()
 	   {
@@ -117,5 +131,23 @@ public class MonitorTimer {
 		   {
 			   itr.next().reset();
 		   }
+	   }
+	   
+	   public SymbolicWatcher getWatcher(){
+		   return monitors.lastElement();
+	   }
+	   
+	   public void showPourcentage(Graphics g)
+	   {
+		   float pourcentage = ((float)monitorTime/(float)executionTime)*(float)100;
+		   
+		   DecimalFormat dFormat = new DecimalFormat("#.##");
+		   
+		   String pour = dFormat.format((double)pourcentage);
+		   System.out.print(pour+" ");
+		   //System.out.print(pour);
+		   
+		   g.setColor(Color.red);
+		   g.drawString(pour+"%", 270, 230);
 	   }
 	}

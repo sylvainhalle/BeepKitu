@@ -4,6 +4,7 @@ import ca.uqam.info.runtime.LTLFOWatcher;
 
 import com.mojang.mario.Art;
 import com.mojang.mario.LevelScene;
+import com.mojang.mario.MonitorList;
 import com.mojang.mario.MonitorTimer;
 
 import java.awt.Graphics;
@@ -103,19 +104,22 @@ public class Enemy extends Sprite
                         if (type == Enemy.ENEMY_RED_KOOPA)
                         {
                             spriteContext.addSprite(new Shell(world, x, y, 0));
-                            MonitorTimer.Instance().updateWatchers("<action>CatchShell</action>");
+                            MonitorTimer.Instance().updateWatchers("<action><name>CatchShell</name></action>");
+                            MonitorList.addToList(MonitorTimer.Instance().getWatcher());
                         }
                         else if (type == Enemy.ENEMY_GREEN_KOOPA)
                         {
                             spriteContext.addSprite(new Shell(world, x, y, 1));
-                            MonitorTimer.Instance().updateWatchers("<action>CatchShell</action>");
+                            MonitorTimer.Instance().updateWatchers("<action><name>CatchShell</name></action>");
+                            MonitorList.addToList(MonitorTimer.Instance().getWatcher());
                         }
                     }
                 }
                 else
                 {
                     world.mario.getHurt();
-                	MonitorTimer.Instance().updateWatchers("<action>CollisionEnemy</action>");
+                	MonitorTimer.Instance().updateWatchers("<action><name>CollisionEnemy</name></action>");
+                	MonitorList.addToList(MonitorTimer.Instance().getWatcher());
                 	
                 }
             }

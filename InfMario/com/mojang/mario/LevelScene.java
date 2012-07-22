@@ -354,6 +354,16 @@ public class LevelScene extends Scene implements SpriteContext
         int time = (timeLeft+15-1)/15;
         if (time<0) time = 0;
         drawStringDropShadow(g, " "+df2.format(time), 35, 1, 7);
+        
+        drawString(g, "-EVENT-", 10, 25, 7);
+        
+        if (MonitorList.size() > 0) {
+        	drawString(g, MonitorList.getEvent(MonitorList.size() - 1).getFormula().toString(), 10, 40, 4);
+        }
+        
+        if (MonitorList.size() > 1) {
+        	drawString(g, MonitorList.getEvent(MonitorList.size() - 2).getFormula().toString(), 10, 55, 4);
+        }
 
 
         if (startTime > 0)
@@ -392,6 +402,9 @@ public class LevelScene extends Scene implements SpriteContext
 
             renderBlackout(g, (int) (mario.xDeathPos - xCam), (int) (mario.yDeathPos - yCam), (int) (320 - t));
         }
+        
+        MonitorTimer.Instance().getOutcomes(g);
+        MonitorTimer.Instance().showPourcentage(g);
     }
 
     private void drawStringDropShadow(Graphics g, String text, int x, int y, int c)

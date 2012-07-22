@@ -4,11 +4,15 @@ package com.mojang.mario.sprites;
 import ca.uqam.info.runtime.LTLFOWatcher;
 
 import com.mojang.mario.Art;
+import com.mojang.mario.MonitorList;
 import com.mojang.mario.MonitorTimer;
 import com.mojang.mario.Scene;
 import com.mojang.mario.level.*;
 import com.mojang.mario.LevelScene;
 import com.mojang.sonar.FixedSoundSource;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 
 public class Mario extends Sprite
@@ -68,6 +72,20 @@ public class Mario extends Sprite
 
     public Mario(LevelScene world)
     {
+    	Calendar cal = Calendar.getInstance();
+    	SimpleDateFormat sdf = new SimpleDateFormat("HH-mm-ss");
+    	MonitorList.fileName = "com/mojang/event/InfMario" + sdf.format(cal.getTime()).toString() + ".txt";
+    	
+    	File file = new File(MonitorList.fileName);
+
+    	try {
+    		file.createNewFile();
+    	}
+    	
+    	catch (IOException e) {
+    		System.out.println("File already exist");
+    	}
+    	
         Mario.instance = this;
         this.world = world;
         keys = Scene.keys;
@@ -212,7 +230,8 @@ public class Mario extends Sprite
 
         if (keys[KEY_JUMP] || (jumpTime < 0 && !onGround && !sliding))
         {
-        	MonitorTimer.Instance().updateWatchers("<action>Jump</action>");
+        	MonitorTimer.Instance().updateWatchers("<action><name>Jump</name><jumpHeight>"+y+"</jumpHeight></action>");
+        	MonitorList.addToList(MonitorTimer.Instance().getWatcher());
         	
             if (jumpTime < 0)
             {
@@ -347,6 +366,8 @@ public class Mario extends Sprite
 
         if (carried != null)
         {
+        	MonitorTimer.Instance().updateWatchers("<action><name>HaveShell</name></action>");
+        	MonitorList.addToList(MonitorTimer.Instance().getWatcher());
             carried.x = x + facing * 8;
             carried.y = y - 2;
             if (!keys[KEY_SPEED])

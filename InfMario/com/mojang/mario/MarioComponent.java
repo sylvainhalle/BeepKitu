@@ -32,6 +32,9 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
     private boolean focused = false;
     private boolean useScale2x = false;
     private MapScene mapScene;
+    
+    Image img;
+    Graphics graph;
 
     private Scale2x scale2x = new Scale2x(320, 240);
 
@@ -46,6 +49,7 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
         setPreferredSize(size);
         setMinimumSize(size);
         setMaximumSize(size);
+        
 
         try
         {
@@ -94,10 +98,12 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
 
     public void paint(Graphics g)
     {
+
     }
 
     public void update(Graphics g)
     {
+    	
     }
 
     public void start()
@@ -126,10 +132,10 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
         scene.setSound(sound);
 
         Art.init(graphicsConfiguration, sound);
-
         VolatileImage image = createVolatileImage(320, 240);
         Graphics g = getGraphics();
         Graphics og = image.getGraphics();
+        
 
         int lastTick = -1;
         //        double lastNow = 0;
@@ -206,6 +212,7 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
             og.setColor(Color.BLACK);
             /*          drawString(og, "FPS: " + fps, 5, 5, 0);
              drawString(og, "FPS: " + fps, 4, 4, 7);*/
+            
 
             if (width != 320 || height != 240)
             {
@@ -233,10 +240,7 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
             {
             }
             
-            MonitorTimer.Instance().getOutcomes();
-            	 
             //MonitorTimer.Instance().resetMonitors();
-            
             long timeFin = System.nanoTime();
             MonitorTimer.Instance().addExecTime(timeFin - timeDebut);
             
