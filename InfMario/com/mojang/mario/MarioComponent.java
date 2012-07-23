@@ -285,6 +285,8 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
         {
             lose();
         }
+        
+        MonitorTimer.Instance().printEvent();
     }
 
     public void keyTyped(KeyEvent arg0)
@@ -306,6 +308,8 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
         scene = mapScene;
         mapScene.startMusic();
         mapScene.levelWon();
+        
+        MonitorTimer.Instance().printEvent();
     }
     
     public void win()
