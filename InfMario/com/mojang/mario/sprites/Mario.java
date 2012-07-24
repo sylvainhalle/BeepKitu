@@ -211,6 +211,7 @@ public class Mario extends Sprite
         {
             if (keys[KEY_DOWN] && large)
             {
+            	MonitorTimer.Instance().updateWatchers("<action><name>Crouch</name></action>");
                 ducking = true;
             }
             else
@@ -556,6 +557,8 @@ public class Mario extends Sprite
     public void stomp(Enemy enemy)
     {
         if (deathTime > 0 || world.paused) return;
+        
+        MonitorTimer.Instance().updateWatchers("<action><name>Stomp</name></action>");
 
         float targetY = enemy.y - enemy.height / 2;
         move(0, targetY - y);

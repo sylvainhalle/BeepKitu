@@ -62,7 +62,7 @@ public class MonitorTimer {
 			FlowLayout flow = new FlowLayout();
 			flow.setAlignment(FlowLayout.LEFT);
 			JFrame frame2 = new JFrame("Règles");
-			frame2.setPreferredSize(new Dimension(300,400));
+			frame2.setPreferredSize(new Dimension(320,400));
 			frame2.setLayout(flow);
 			frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			   
@@ -103,6 +103,10 @@ public class MonitorTimer {
 		  captions.add("Il faut avoir \"Jump\" au moins une fois");
 		  formulas.add(LTLStringParser.parseFromString("G ([m /action/coinChange] ((m) = ({1})))"));
 		  captions.add("On ne peut pas gagner plus d'un Coin à la fois");
+		  formulas.add(LTLStringParser.parseFromString("G ([x1 /action/name] (((x1) = ({Stomp})) -> (X ([x2 /action/name] (!((x2) = ({Stomp})))))))"));
+		  captions.add("Pas deux événements \"Stomp\" de suite");
+		  formulas.add(LTLStringParser.parseFromString("G ([x1 /action/name] (((x1) = ({Crouch})) -> (X ([x2 /action/name] (!((x2) = ({Jump})))))))"));
+		  captions.add("Si \"Crouch\", on ne peut pas avoir \"Jump\"");
 		  
 		  Iterator<Operator> itr = formulas.iterator();
 		  

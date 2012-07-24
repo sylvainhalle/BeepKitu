@@ -103,12 +103,10 @@ public class Enemy extends Sprite
                         if (type == Enemy.ENEMY_RED_KOOPA)
                         {
                             spriteContext.addSprite(new Shell(world, x, y, 0));
-                            MonitorTimer.Instance().updateWatchers("<action><name>CatchShell</name></action>");
                         }
                         else if (type == Enemy.ENEMY_GREEN_KOOPA)
                         {
                             spriteContext.addSprite(new Shell(world, x, y, 1));
-                            MonitorTimer.Instance().updateWatchers("<action><name>CatchShell</name></action>");
                         }
                     }
                 }

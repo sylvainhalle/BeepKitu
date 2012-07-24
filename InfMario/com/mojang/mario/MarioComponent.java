@@ -94,6 +94,10 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
         {
             useScale2x = !useScale2x;
         }
+        if (keyCode == KeyEvent.VK_Q)
+        {
+        	MonitorTimer.Instance().resetMonitors();
+        }
     }
 
     public void paint(Graphics g)
