@@ -18,6 +18,7 @@ import com.mojang.mario.sprites.*;
 import com.mojang.sonar.FakeSoundEngine;
 import com.mojang.sonar.SonarSoundEngine;
 
+import com.mojang.mario.Server;
 
 public class MarioComponent extends JComponent implements Runnable, KeyListener, FocusListener
 {
@@ -37,6 +38,8 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
     Graphics graph;
 
     private Scale2x scale2x = new Scale2x(320, 240);
+    
+    public static Server server;
 
     public MarioComponent(int width, int height)
     {
@@ -62,6 +65,8 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
         }
 
         setFocusable(true);
+        
+        server = new Server(80);
     }
 
     private void toggleKey(int keyCode, boolean isPressed)
@@ -119,7 +124,7 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
         }
     }
 
-    public void stop()
+	public void stop()
     {
         Art.stopMusic();
         running = false;
@@ -248,10 +253,10 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
             long timeFin = System.nanoTime();
             MonitorTimer.Instance().addExecTime(timeFin - timeDebut);
             
+            server.run();
         }
 
         Art.stopMusic();
-        
     }
 
     private void drawString(Graphics g, String text, int x, int y, int c)

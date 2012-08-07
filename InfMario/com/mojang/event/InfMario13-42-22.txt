@@ -1,0 +1,22 @@
+[13:42:24]action: name: Jump - jumpHeight: 191.0 - 
+[13:42:24]action: name: Jump - jumpHeight: 177.7 - 
+[13:42:24]action: name: Jump - jumpHeight: 164.4 - 
+[13:42:24]action: name: Jump - jumpHeight: 153.0 - 
+[13:42:25]action: name: Jump - jumpHeight: 143.5 - 
+[13:42:25]action: name: Jump - jumpHeight: 135.9 - 
+[13:42:25]action: name: Jump - jumpHeight: 130.2 - 
+[13:42:25]action: name: Jump - jumpHeight: 126.399994 - 
+[13:42:26]action: name: Jump - jumpHeight: 191.0 - 
+[13:42:26]action: name: GetCoin - coinChange: 0 - 
+[13:42:26]action: name: Jump - jumpHeight: 177.7 - 
+[13:42:26]action: name: Jump - jumpHeight: 164.4 - 
+[13:42:26]action: name: Jump - jumpHeight: 153.0 - 
+[13:42:27]action: name: Jump - jumpHeight: 191.0 - 
+[13:42:27]action: name: GetCoin - coinChange: 0 - 
+[13:42:27]action: name: Jump - jumpHeight: 177.7 - 
+[13:42:27]action: name: Jump - jumpHeight: 164.4 - 
+[13:42:27]action: name: Jump - jumpHeight: 191.0 - 
+[13:42:27]action: name: Jump - jumpHeight: 177.7 - 
+[13:42:27]action: name: Jump - jumpHeight: 164.4 - 
+[13:42:28]action: name: CatchShell - 
+[13:42:28]action: name: HaveShell - 

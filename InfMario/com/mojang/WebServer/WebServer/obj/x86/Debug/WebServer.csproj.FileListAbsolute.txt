@@ -1,0 +1,5 @@
+C:\Users\Utilisateur\workspace\InfMario\com\mojang\WebServer\WebServer\bin\Debug\WebServer.exe
+C:\Users\Utilisateur\workspace\InfMario\com\mojang\WebServer\WebServer\bin\Debug\WebServer.pdb
+C:\Users\Utilisateur\workspace\InfMario\com\mojang\WebServer\WebServer\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Utilisateur\workspace\InfMario\com\mojang\WebServer\WebServer\obj\x86\Debug\WebServer.exe
+C:\Users\Utilisateur\workspace\InfMario\com\mojang\WebServer\WebServer\obj\x86\Debug\WebServer.pdb

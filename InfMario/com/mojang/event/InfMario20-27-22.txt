@@ -1,0 +1,22 @@
+[20:27:22]action: name: Jump - jumpHeight: 0.0 - 
+[20:27:22]action: name: Jump - jumpHeight: 3.0 - 
+[20:27:22]action: name: Jump - jumpHeight: 8.55 - 
+[20:27:22]action: name: Jump - jumpHeight: 16.2675 - 
+[20:27:23]action: name: Jump - jumpHeight: 207.0 - 
+[20:27:23]action: name: Jump - jumpHeight: 193.7 - 
+[20:27:23]action: name: Jump - jumpHeight: 180.4 - 
+[20:27:23]action: name: Jump - jumpHeight: 169.0 - 
+[20:27:23]action: name: Jump - jumpHeight: 154.99457 - 
+[20:27:23]action: name: Jump - jumpHeight: 159.59538 - 
+[20:27:23]action: name: Jump - jumpHeight: 197.88466 - 
+[20:27:23]action: name: Jump - jumpHeight: 207.0 - 
+[20:27:23]action: name: Jump - jumpHeight: 193.7 - 
+[20:27:24]action: name: Jump - jumpHeight: 180.4 - 
+[20:27:24]action: name: Jump - jumpHeight: 169.0 - 
+[20:27:26]action: name: Jump - jumpHeight: 207.0 - 
+[20:27:26]action: name: Jump - jumpHeight: 193.7 - 
+[20:27:26]action: name: Jump - jumpHeight: 180.4 - 
+[20:27:27]action: name: Jump - jumpHeight: 169.0 - 
+[20:27:27]action: name: Jump - jumpHeight: 159.5 - 
+[20:27:27]action: name: Jump - jumpHeight: 151.9 - 
+[20:27:27]action: name: CollisionEnemy - 

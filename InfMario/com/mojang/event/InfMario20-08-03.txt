@@ -1,0 +1,11 @@
+[20:08:05]action: name: Jump - jumpHeight: 191.0 - 
+[20:08:05]action: name: Jump - jumpHeight: 177.7 - 
+[20:08:05]action: name: Jump - jumpHeight: 164.4 - 
+[20:08:05]action: name: Jump - jumpHeight: 153.0 - 
+[20:08:05]action: name: Jump - jumpHeight: 143.5 - 
+[20:08:05]action: name: Jump - jumpHeight: 135.9 - 
+[20:08:05]action: name: Jump - jumpHeight: 130.2 - 
+[20:08:05]action: name: Jump - jumpHeight: 126.399994 - 
+[20:08:05]action: name: Jump - jumpHeight: 124.49999 - 
+[20:08:05]action: name: Jump - jumpHeight: 125.884995 - 
+[20:08:06]action: name: CollisionEnemy - 

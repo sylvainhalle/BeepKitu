@@ -1,0 +1,8 @@
+[20:13:17]action: name: Jump - jumpHeight: 0.0 - 
+[20:13:20]action: name: Jump - jumpHeight: 175.0 - 
+[20:13:20]action: name: Jump - jumpHeight: 161.7 - 
+[20:13:20]action: name: Jump - jumpHeight: 148.4 - 
+[20:13:20]action: name: Jump - jumpHeight: 137.0 - 
+[20:13:21]action: name: Jump - jumpHeight: 127.5 - 
+[20:13:21]action: name: Jump - jumpHeight: 119.9 - 
+[20:13:21]action: name: JumpOnEnemy - 
