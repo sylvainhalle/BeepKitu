@@ -1,0 +1,3 @@
+[13:29:13]action: name: Jump - jumpHeight: 175.0 - 
+[13:29:13]action: name: Stomp - id: 1 - iswinged: true - 
+[13:29:13]action: name: EnemyDead - id: 1 - 

@@ -1,0 +1,5 @@
+[17:11:10]action: name: Jump - jumpHeight: 223.0 - 
+[17:11:10]action: name: GetCoin - coinChange: 1 - 
+[17:11:10]action: name: Jump - jumpHeight: 175.0 - 
+[17:11:10]action: name: GetCoin - coinChange: 2 - 
+[17:11:11]action: name: CollisionEnemy - id: 1 - 

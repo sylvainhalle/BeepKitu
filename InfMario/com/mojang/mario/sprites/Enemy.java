@@ -12,6 +12,8 @@ import java.awt.Graphics;
 
 public class Enemy extends Sprite
 {
+	public int id;
+	
     public static final int ENEMY_RED_KOOPA = 0;
     public static final int ENEMY_GREEN_KOOPA = 1;
     public static final int ENEMY_GOOMBA = 2;
@@ -45,9 +47,9 @@ public class Enemy extends Sprite
     public boolean noFireballDeath;
     
 
-    public Enemy(LevelScene world, int x, int y, int dir, int type, boolean winged)
+    public Enemy(LevelScene world, int x, int y, int dir, int type, boolean winged,int idt)
     {
-
+    	this.id =idt; 
         this.type = type;
         sheet = Art.enemies;
         this.winged = winged;
@@ -91,6 +93,8 @@ public class Enemy extends Sprite
                     {
                         winged = false;
                         ya = 0;
+                        if (spriteTemplate != null) spriteTemplate.isDead = true;
+                        deadTime = 1;
                     }
                     else
                     {
@@ -113,7 +117,7 @@ public class Enemy extends Sprite
                 else
                 {
                     world.mario.getHurt();
-                	MonitorTimer.Instance().updateWatchers("<action><name>CollisionEnemy</name></action>");
+                	MonitorTimer.Instance().updateWatchers("<action><name>CollisionEnemy</name><id>"+id+"</id></action>");
                 	
                 }
             }
@@ -135,6 +139,7 @@ public class Enemy extends Sprite
                 {
                     world.addSprite(new Sparkle((int) (x + Math.random() * 16 - 8) + 4, (int) (y - Math.random() * 8) + 4, (float) (Math.random() * 2 - 1), (float) Math.random() * -1, 0, 1, 5));
                 }
+                MonitorTimer.Instance().updateWatchers("<action><name>EnemyDead</name><id>"+id+"</id></action>");
                 spriteContext.removeSprite(this);
             }
 
@@ -354,6 +359,10 @@ public class Enemy extends Sprite
                 
                 world.sound.play(Art.samples[Art.SAMPLE_MARIO_KICK], this, 1, 1, 1);
 
+                ////////////////////EVENT//////////////////////////
+                MonitorTimer.Instance().updateWatchers("<action><name>EnemyFireballDeath</name></action>");
+                /////////////////////////////////////////////////
+                
                 xa = fireball.facing * 2;
                 ya = -5;
                 flyDeath = true;

@@ -1,0 +1,10 @@
+[13:17:29]action: name: Jump - jumpHeight: 223.0 - 
+[13:17:30]action: name: Jump - jumpHeight: 207.0 - 
+[13:17:30]action: name: GetCoin - coinChange: 1 - 
+[13:17:30]action: name: Jump - jumpHeight: 207.0 - 
+[13:17:31]action: name: Jump - jumpHeight: 175.0 - 
+[13:17:33]action: name: Jump - jumpHeight: 127.0 - 
+[13:17:33]action: name: Jump - jumpHeight: 175.0 - 
+[13:17:36]action: name: Jump - jumpHeight: 127.0 - 
+[13:17:39]action: name: Jump - jumpHeight: 143.0 - 
+[13:17:39]action: name: Stomp - id: 11 - iswinged: true - 

@@ -231,7 +231,8 @@ public class Mario extends Sprite
 
         if (keys[KEY_JUMP] || (jumpTime < 0 && !onGround && !sliding))
         {
-        	MonitorTimer.Instance().updateWatchers("<action><name>Jump</name><jumpHeight>"+y+"</jumpHeight></action>");
+        	if (wasOnGround)
+        		MonitorTimer.Instance().updateWatchers("<action><name>Jump</name><jumpHeight>"+y+"</jumpHeight></action>");
         	
             if (jumpTime < 0)
             {
@@ -558,7 +559,7 @@ public class Mario extends Sprite
     {
         if (deathTime > 0 || world.paused) return;
         
-        MonitorTimer.Instance().updateWatchers("<action><name>Stomp</name></action>");
+        MonitorTimer.Instance().updateWatchers("<action><name>Stomp</name><id>"+enemy.id+"</id><iswinged>"+enemy.winged+"</iswinged></action>");
 
         float targetY = enemy.y - enemy.height / 2;
         move(0, targetY - y);

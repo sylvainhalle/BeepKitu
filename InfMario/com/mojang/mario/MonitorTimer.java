@@ -26,10 +26,15 @@ public class MonitorTimer {
 	   private static MonitorTimer instance = null;
 	   private static long monitorTime;
 	   private static long executionTime;
+	   private int numberEvents;
 	   private long debutTime;
 	   private long finTime;
 	   
 	   public static String fileName;
+	   private FileWriter graphA;
+	   private FileWriter graphB;
+	   private BufferedWriter writerA;
+	   private BufferedWriter writerB;
 	   
 	   private Vector<Operator> formulas;
 	   private Vector<SymbolicWatcher> monitors;
@@ -53,6 +58,24 @@ public class MonitorTimer {
 			formulas = new Vector<Operator>();
 			monitors = new Vector<SymbolicWatcher>();
 			captions = new Vector<String>();
+			
+			try {
+				graphA = new FileWriter("numberEvents.csv");
+			} catch (IOException e) {
+				graphA = null;
+				e.printStackTrace();
+			}
+			
+			writerA = new BufferedWriter(graphA);
+
+			try {
+				graphB = new FileWriter("timeEvent.csv");
+			} catch (IOException e) {
+				graphB = null;
+				e.printStackTrace();
+			}
+			
+			writerB = new BufferedWriter(graphB);
 			
 			monitorTime = 0;
 			fillFormulas();
@@ -95,7 +118,7 @@ public class MonitorTimer {
 		  captions.add("Évènement \"Jump\" impossible");
 		  formulas.add(LTLStringParser.parseFromString("G ([m /action/name] (!((m) = ({CollisionEnemy}))))"));
 		  captions.add("\"CollisionEnemy\" impossible");
-		  formulas.add(LTLStringParser.parseFromString("G ([x1 /action/name] (((x1) = ({HaveShell})) -> (X ([x2 /action/name] (!((x2) = ({CollisionEnemy})))))))"));
+		  formulas.add(LTLStringParser.parseFromString("G ([x1 /action/name] (((x1) = ({HaveShell})) -> (X (G ([x2 /action/name] (!((x2) = ({CollisionEnemy}))))))))"));
 		  captions.add("\"CollisionEnemy\" impossible si \"HaveShell\"");
 		  formulas.add(LTLStringParser.parseFromString("G ([m /action/jumpHeight] (!((m) < ({20}))))"));
 		  captions.add("\"Jump\" plus haut que l'écran impossible");
@@ -107,11 +130,41 @@ public class MonitorTimer {
 		  captions.add("Pas deux événements \"Stomp\" de suite");
 		  formulas.add(LTLStringParser.parseFromString("G ([x1 /action/name] (((x1) = ({Crouch})) -> (X ([x2 /action/name] (!((x2) = ({Jump})))))))"));
 		  captions.add("Si \"Crouch\", on ne peut pas avoir \"Jump\"");
+	      formulas.add(LTLStringParser.parseFromString("G ([x1 /action/name] (((x1) = ({EnemyFireballDeath})) -> (X ([x2 /action/name] ((x2) = ({FireballDisappear}))))))))"));
+	      captions.add("Une boule de feu doit disparaître après avoir touché un ennemi.");
+	      formulas.add(LTLStringParser.parseFromString("G ([x1 /action/name] (((x1) = ({Stomp})) -> ([x3 /action/iswinged] (((x3) = ({true})) -> ([x2 /action/id] (X ([x5 /action/id] (((x2) = (x5)) -> ([x4 /action/name] (!((x4) = ({EnemyDead}))))))))))))"));
+	      captions.add("Un ennemie sur lequel on \"Stomp\" et qui a des ailes ne peut mourir suite à cela.");
+		  
+		  //formulas.add(LTLStringParser.parseFromString(""));
 		  
 		  Iterator<Operator> itr = formulas.iterator();
 		  
 		  finTime = System.nanoTime();
 		  addTime(finTime - debutTime);
+	   }
+	   
+	   public Operator formulaaa()
+	   {
+		   OperatorEquals f1 = new OperatorEquals(new Atom("x2"), new Constant("ElephantUpgrade"));
+	        OperatorNot f2 = new OperatorNot();
+	        f2.setOperand(f1);
+
+	        FOForAll fo = new FOForAll(LTLStringParser.parseFromString("[x2 /action/name] (!((x2) = ({Stomp})))"));
+	        OperatorG f3 = new OperatorG();
+	        f3.setOperand(fo);
+	        OperatorX secondPart = new OperatorX();
+	        secondPart.setOperand(f3);
+
+	        //OperatorEquals f4 = new OperatorEquals(new Atom("x1"), new Constant("ElephantUpgrade"));
+	        FOForAll fo2 = new FOForAll(LTLStringParser.parseFromString("[x1 /action/name] (((x1) = ({Stomp}))"));
+
+	        OperatorImplies f5 = new OperatorImplies(fo2, secondPart);
+	        f5.setOperands(fo2,secondPart);
+	        
+	        OperatorG formula = new OperatorG();
+	        formula.setOperand(f5);
+	        
+	        return formula;
 	   }
 	   
 	   public static MonitorTimer Instance() {
@@ -141,13 +194,36 @@ public class MonitorTimer {
 	   public void updateWatchers(String s)
 	   {
 		   debutTime = System.nanoTime();
+		   numberEvents++;
+		   double timeinSec = (double)executionTime/1000000000.0;
+		   try {
+			writerA.write(numberEvents+","+timeinSec+"\n");
+			writerA.flush();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		   
 		   Iterator<SymbolicWatcher> itr = monitors.iterator();
 		   
+		   long timeGraphBd = System.nanoTime();
 		   while(itr.hasNext())
 		   {
-			   itr.next().update(s);
+			   SymbolicWatcher w = itr.next();
+			   w.update(s);
+			   w.getOutcome();
+			   
 		   }
+		   long timeGraphBf = System.nanoTime();
+		   long timeGraphB = timeGraphBf - timeGraphBd;
+		   double timeMili = (double)timeGraphB/1000000.0;
+		   try {
+			writerB.write(numberEvents+","+timeMili+"\n");
+			writerB.flush();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		   
 		   addEvent(s);
 		   

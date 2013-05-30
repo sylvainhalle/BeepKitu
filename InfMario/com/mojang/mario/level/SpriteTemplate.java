@@ -1,6 +1,7 @@
 package com.mojang.mario.level;
 
 import com.mojang.mario.LevelScene;
+import com.mojang.mario.MonitorTimer;
 import com.mojang.mario.sprites.*;
 
 public class SpriteTemplate
@@ -9,6 +10,9 @@ public class SpriteTemplate
     public Sprite sprite;
     public boolean isDead = false;
     private boolean winged;
+    
+	public static int numberEnemies = 0;
+    public int id;
     
     private int type;
     
@@ -20,7 +24,10 @@ public class SpriteTemplate
     
     public void spawn(LevelScene world, int x, int y, int dir)
     {
-        if (isDead) return;
+        if (isDead)
+        {
+        	return;
+        }
 
         if (type==Enemy.ENEMY_FLOWER)
         {
@@ -28,7 +35,9 @@ public class SpriteTemplate
         }
         else
         {
-            sprite = new Enemy(world, x*16+8, y*16+15, dir, type, winged);
+        	numberEnemies++;
+        	id = numberEnemies;
+            sprite = new Enemy(world, x*16+8, y*16+15, dir, type, true,id);
         }
         sprite.spriteTemplate = this;
         world.addSprite(sprite);

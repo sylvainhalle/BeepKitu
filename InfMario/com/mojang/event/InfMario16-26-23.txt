@@ -1,0 +1,33 @@
+[16:26:25]action: name: Jump - jumpHeight: 223.0 - 
+[16:26:25]action: name: Jump - jumpHeight: 209.7 - 
+[16:26:25]action: name: Jump - jumpHeight: 196.4 - 
+[16:26:27]action: name: Jump - jumpHeight: 223.0 - 
+[16:26:27]action: name: Jump - jumpHeight: 209.7 - 
+[16:26:27]action: name: Jump - jumpHeight: 196.4 - 
+[16:26:27]action: name: Jump - jumpHeight: 185.0 - 
+[16:26:27]action: name: Jump - jumpHeight: 175.5 - 
+[16:26:27]action: name: Jump - jumpHeight: 167.9 - 
+[16:26:27]action: name: Jump - jumpHeight: 162.2 - 
+[16:26:27]action: name: Jump - jumpHeight: 158.4 - 
+[16:26:28]action: name: Stomp - 
+[16:26:29]action: name: Jump - jumpHeight: 191.0 - 
+[16:26:29]action: name: Jump - jumpHeight: 177.7 - 
+[16:26:29]action: name: Jump - jumpHeight: 164.4 - 
+[16:26:29]action: name: Jump - jumpHeight: 153.0 - 
+[16:26:29]action: name: Jump - jumpHeight: 143.5 - 
+[16:26:29]action: name: Jump - jumpHeight: 135.9 - 
+[16:26:29]action: name: Jump - jumpHeight: 130.2 - 
+[16:26:29]action: name: Jump - jumpHeight: 126.399994 - 
+[16:26:29]action: name: Jump - jumpHeight: 124.49999 - 
+[16:26:29]action: name: Jump - jumpHeight: 125.884995 - 
+[16:26:29]action: name: Jump - jumpHeight: 130.06224 - 
+[16:26:29]action: name: Jump - jumpHeight: 136.6129 - 
+[16:26:31]action: name: Jump - jumpHeight: 159.0 - 
+[16:26:31]action: name: Jump - jumpHeight: 145.7 - 
+[16:26:31]action: name: Jump - jumpHeight: 132.4 - 
+[16:26:32]action: name: Jump - jumpHeight: 120.99999 - 
+[16:26:32]action: name: Stomp - 
+[16:26:33]action: name: Jump - jumpHeight: 159.0 - 
+[16:26:33]action: name: Jump - jumpHeight: 145.7 - 
+[16:26:33]action: name: Jump - jumpHeight: 132.4 - 
+[16:26:33]action: name: Jump - jumpHeight: 120.99999 - 

@@ -285,7 +285,11 @@ public class LevelScene extends Scene implements SpriteContext
                     {
                         if (sprite.fireballCollideCheck(fireball))
                         {
-                            fireball.die();
+                        	//////////////////////////////BUG///////////////////////////
+                        	//MonitorTimer.Instance().updateWatchers("<action><name>FireballDisappear</name></action>");
+                        	//fireball.die();
+                        	/////////////////////////////////////////////////////////////
+                            
                         }
                     }
                 }

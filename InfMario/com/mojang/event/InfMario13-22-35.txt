@@ -1,0 +1,14 @@
+[13:22:36]action: name: Jump - jumpHeight: 175.0 - 
+[13:22:37]action: name: GetCoin - coinChange: 1 - 
+[13:22:37]action: name: Jump - jumpHeight: 175.0 - 
+[13:22:38]action: name: Jump - jumpHeight: 223.0 - 
+[13:22:38]action: name: GetCoin - coinChange: 2 - 
+[13:22:38]action: name: GetCoin - coinChange: 1 - 
+[13:22:39]action: name: Jump - jumpHeight: 191.0 - 
+[13:22:39]action: name: Jump - jumpHeight: 159.0 - 
+[13:22:40]action: name: GetCoin - coinChange: 1 - 
+[13:22:40]action: name: GetCoin - coinChange: 2 - 
+[13:22:40]action: name: GetCoin - coinChange: 1 - 
+[13:22:40]action: name: Jump - jumpHeight: 175.0 - 
+[13:22:40]action: name: GetCoin - coinChange: 1 - 
+[13:22:41]action: name: Jump - jumpHeight: 207.0 - 

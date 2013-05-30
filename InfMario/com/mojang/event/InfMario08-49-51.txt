@@ -1,0 +1,399 @@
+[08:49:52]action: name: Jump - jumpHeight: 207.0 - 
+[08:49:52]action: name: Jump - jumpHeight: 193.7 - 
+[08:49:52]action: name: Jump - jumpHeight: 180.4 - 
+[08:49:52]action: name: Jump - jumpHeight: 169.0 - 
+[08:49:53]action: name: Jump - jumpHeight: 207.0 - 
+[08:49:53]action: name: Jump - jumpHeight: 193.7 - 
+[08:49:53]action: name: Jump - jumpHeight: 180.4 - 
+[08:49:54]action: name: Jump - jumpHeight: 191.0 - 
+[08:49:54]action: name: GetCoin - coinChange: 1 - 
+[08:49:54]action: name: Jump - jumpHeight: 177.7 - 
+[08:49:54]action: name: Jump - jumpHeight: 164.4 - 
+[08:49:54]action: name: GetCoin - coinChange: 2 - 
+[08:49:54]action: name: Jump - jumpHeight: 156.0 - 
+[08:49:55]action: name: Jump - jumpHeight: 191.0 - 
+[08:49:55]action: name: Jump - jumpHeight: 177.7 - 
+[08:49:55]action: name: Jump - jumpHeight: 164.4 - 
+[08:49:55]action: name: GetCoin - coinChange: 1 - 
+[08:49:55]action: name: Jump - jumpHeight: 156.0 - 
+[08:49:55]action: name: Jump - jumpHeight: 191.0 - 
+[08:49:55]action: name: Jump - jumpHeight: 177.7 - 
+[08:49:55]action: name: Jump - jumpHeight: 164.4 - 
+[08:49:55]action: name: Jump - jumpHeight: 156.0 - 
+[08:49:55]action: name: Jump - jumpHeight: 159.0 - 
+[08:49:56]action: name: Jump - jumpHeight: 191.0 - 
+[08:49:56]action: name: Jump - jumpHeight: 177.7 - 
+[08:49:56]action: name: Jump - jumpHeight: 164.4 - 
+[08:49:56]action: name: Jump - jumpHeight: 156.0 - 
+[08:49:56]action: name: Jump - jumpHeight: 191.0 - 
+[08:49:56]action: name: GetCoin - coinChange: 2 - 
+[08:49:56]action: name: Jump - jumpHeight: 177.7 - 
+[08:49:56]action: name: Jump - jumpHeight: 164.4 - 
+[08:49:56]action: name: Jump - jumpHeight: 156.0 - 
+[08:49:56]action: name: GetCoin - coinChange: 1 - 
+[08:49:57]action: name: Jump - jumpHeight: 191.0 - 
+[08:49:57]action: name: GetCoin - coinChange: 1 - 
+[08:49:57]action: name: Jump - jumpHeight: 177.7 - 
+[08:49:57]action: name: Jump - jumpHeight: 164.4 - 
+[08:49:57]action: name: Jump - jumpHeight: 156.0 - 
+[08:49:57]action: name: Jump - jumpHeight: 191.0 - 
+[08:49:57]action: name: Jump - jumpHeight: 177.7 - 
+[08:49:57]action: name: Jump - jumpHeight: 164.4 - 
+[08:49:57]action: name: Jump - jumpHeight: 156.0 - 
+[08:49:58]action: name: Jump - jumpHeight: 191.0 - 
+[08:49:58]action: name: Jump - jumpHeight: 177.7 - 
+[08:49:58]action: name: Jump - jumpHeight: 164.4 - 
+[08:49:58]action: name: Jump - jumpHeight: 153.0 - 
+[08:49:58]action: name: Jump - jumpHeight: 143.5 - 
+[08:49:58]action: name: Jump - jumpHeight: 135.9 - 
+[08:49:59]action: name: Jump - jumpHeight: 130.2 - 
+[08:49:59]action: name: Jump - jumpHeight: 126.399994 - 
+[08:49:59]action: name: Jump - jumpHeight: 124.49999 - 
+[08:49:59]action: name: Jump - jumpHeight: 125.884995 - 
+[08:49:59]action: name: Jump - jumpHeight: 127.0 - 
+[08:50:00]action: name: GetCoin - coinChange: 2 - 
+[08:50:01]action: name: GetCoin - coinChange: 1 - 
+[08:50:01]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:01]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:01]action: name: Jump - jumpHeight: 196.4 - 
+[08:50:01]action: name: Jump - jumpHeight: 185.0 - 
+[08:50:01]action: name: Jump - jumpHeight: 175.5 - 
+[08:50:01]action: name: GetCoin - coinChange: 1 - 
+[08:50:02]action: name: GetCoin - coinChange: 2 - 
+[08:50:02]action: name: Jump - jumpHeight: 191.0 - 
+[08:50:02]action: name: Jump - jumpHeight: 177.7 - 
+[08:50:02]action: name: Jump - jumpHeight: 164.4 - 
+[08:50:02]action: name: GetCoin - coinChange: 1 - 
+[08:50:02]action: name: GetCoin - coinChange: 2 - 
+[08:50:02]action: name: GetCoin - coinChange: 1 - 
+[08:50:04]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:04]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:05]action: name: Stomp - 
+[08:50:06]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:06]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:06]action: name: GetCoin - coinChange: 1 - 
+[08:50:06]action: name: GetCoin - coinChange: 2 - 
+[08:50:06]action: name: Jump - jumpHeight: 200.0 - 
+[08:50:07]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:07]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:07]action: name: GetCoin - coinChange: 1 - 
+[08:50:07]action: name: Jump - jumpHeight: 200.0 - 
+[08:50:07]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:07]action: name: GetCoin - coinChange: 1 - 
+[08:50:07]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:07]action: name: GetCoin - coinChange: 1 - 
+[08:50:07]action: name: Jump - jumpHeight: 200.0 - 
+[08:50:07]action: name: GetCoin - coinChange: 2 - 
+[08:50:08]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:08]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:08]action: name: Jump - jumpHeight: 196.4 - 
+[08:50:08]action: name: Jump - jumpHeight: 185.0 - 
+[08:50:08]action: name: Jump - jumpHeight: 175.5 - 
+[08:50:08]action: name: Jump - jumpHeight: 195.206 - 
+[08:50:08]action: name: Jump - jumpHeight: 201.7811 - 
+[08:50:09]action: name: Jump - jumpHeight: 207.0 - 
+[08:50:09]action: name: Jump - jumpHeight: 193.7 - 
+[08:50:09]action: name: Jump - jumpHeight: 180.4 - 
+[08:50:09]action: name: Jump - jumpHeight: 169.0 - 
+[08:50:09]action: name: Jump - jumpHeight: 159.5 - 
+[08:50:10]action: name: Jump - jumpHeight: 191.0 - 
+[08:50:10]action: name: Jump - jumpHeight: 177.7 - 
+[08:50:10]action: name: Jump - jumpHeight: 164.4 - 
+[08:50:10]action: name: Jump - jumpHeight: 153.0 - 
+[08:50:10]action: name: Jump - jumpHeight: 143.5 - 
+[08:50:11]action: name: Jump - jumpHeight: 135.9 - 
+[08:50:11]action: name: Jump - jumpHeight: 130.2 - 
+[08:50:11]action: name: Jump - jumpHeight: 126.399994 - 
+[08:50:11]action: name: Jump - jumpHeight: 124.49999 - 
+[08:50:11]action: name: Jump - jumpHeight: 125.884995 - 
+[08:50:11]action: name: Jump - jumpHeight: 130.06224 - 
+[08:50:11]action: name: Jump - jumpHeight: 136.6129 - 
+[08:50:11]action: name: Jump - jumpHeight: 145.18097 - 
+[08:50:11]action: name: Jump - jumpHeight: 155.46382 - 
+[08:50:11]action: name: Jump - jumpHeight: 167.20425 - 
+[08:50:11]action: name: Jump - jumpHeight: 207.0 - 
+[08:50:11]action: name: Jump - jumpHeight: 193.7 - 
+[08:50:11]action: name: Jump - jumpHeight: 180.4 - 
+[08:50:11]action: name: Jump - jumpHeight: 169.0 - 
+[08:50:11]action: name: Jump - jumpHeight: 159.5 - 
+[08:50:11]action: name: Jump - jumpHeight: 151.9 - 
+[08:50:11]action: name: Jump - jumpHeight: 146.2 - 
+[08:50:11]action: name: Jump - jumpHeight: 142.4 - 
+[08:50:12]action: name: GetCoin - coinChange: 1 - 
+[08:50:12]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:13]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:13]action: name: GetCoin - coinChange: 1 - 
+[08:50:13]action: name: Jump - jumpHeight: 152.0 - 
+[08:50:13]action: name: Jump - jumpHeight: 155.0 - 
+[08:50:13]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:13]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:13]action: name: GetCoin - coinChange: 1 - 
+[08:50:13]action: name: Jump - jumpHeight: 152.0 - 
+[08:50:13]action: name: Jump - jumpHeight: 155.0 - 
+[08:50:13]action: name: GetCoin - coinChange: 1 - 
+[08:50:13]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:13]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:13]action: name: Jump - jumpHeight: 152.0 - 
+[08:50:13]action: name: Jump - jumpHeight: 155.0 - 
+[08:50:14]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:14]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:14]action: name: Jump - jumpHeight: 152.0 - 
+[08:50:14]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:14]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:15]action: name: Jump - jumpHeight: 148.4 - 
+[08:50:15]action: name: Jump - jumpHeight: 137.0 - 
+[08:50:15]action: name: Jump - jumpHeight: 127.5 - 
+[08:50:15]action: name: Jump - jumpHeight: 119.9 - 
+[08:50:15]action: name: Stomp - 
+[08:50:16]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:16]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:16]action: name: Jump - jumpHeight: 148.4 - 
+[08:50:16]action: name: Jump - jumpHeight: 137.0 - 
+[08:50:16]action: name: Jump - jumpHeight: 127.5 - 
+[08:50:16]action: name: Stomp - 
+[08:50:16]action: name: HaveShell - 
+[08:50:17]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:17]action: name: HaveShell - 
+[08:50:17]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:17]action: name: HaveShell - 
+[08:50:17]action: name: Jump - jumpHeight: 148.4 - 
+[08:50:17]action: name: HaveShell - 
+[08:50:17]action: name: Jump - jumpHeight: 137.0 - 
+[08:50:17]action: name: HaveShell - 
+[08:50:17]action: name: Jump - jumpHeight: 127.5 - 
+[08:50:17]action: name: HaveShell - 
+[08:50:17]action: name: Jump - jumpHeight: 119.9 - 
+[08:50:17]action: name: HaveShell - 
+[08:50:18]action: name: Jump - jumpHeight: 143.0 - 
+[08:50:18]action: name: HaveShell - 
+[08:50:18]action: name: Jump - jumpHeight: 129.7 - 
+[08:50:18]action: name: HaveShell - 
+[08:50:18]action: name: Jump - jumpHeight: 116.399994 - 
+[08:50:18]action: name: HaveShell - 
+[08:50:18]action: name: Jump - jumpHeight: 104.99999 - 
+[08:50:18]action: name: HaveShell - 
+[08:50:18]action: name: Jump - jumpHeight: 95.49999 - 
+[08:50:18]action: name: HaveShell - 
+[08:50:18]action: name: Jump - jumpHeight: 111.0 - 
+[08:50:18]action: name: HaveShell - 
+[08:50:18]action: name: Jump - jumpHeight: 97.7 - 
+[08:50:18]action: name: HaveShell - 
+[08:50:18]action: name: Jump - jumpHeight: 84.399994 - 
+[08:50:18]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 72.99999 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 63.499992 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 55.899994 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 50.199993 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 46.399994 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 44.499992 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: GetCoin - coinChange: 1 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: GetCoin - coinChange: 2 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 63.0 - 
+[08:50:19]action: name: GetCoin - coinChange: 1 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 49.7 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 36.4 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 25.000002 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 15.500002 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 7.900002 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:19]action: name: Jump - jumpHeight: 2.2000022 - 
+[08:50:19]action: name: HaveShell - 
+[08:50:20]action: name: Jump - jumpHeight: 111.0 - 
+[08:50:20]action: name: Jump - jumpHeight: 97.7 - 
+[08:50:20]action: name: Jump - jumpHeight: 84.399994 - 
+[08:50:21]action: name: Jump - jumpHeight: 72.99999 - 
+[08:50:21]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:21]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:21]action: name: Jump - jumpHeight: 196.4 - 
+[08:50:21]action: name: Jump - jumpHeight: 185.0 - 
+[08:50:21]action: name: Jump - jumpHeight: 175.5 - 
+[08:50:22]action: name: GetCoin - coinChange: 1 - 
+[08:50:22]action: name: GetCoin - coinChange: 2 - 
+[08:50:22]action: name: GetCoin - coinChange: 1 - 
+[08:50:22]action: name: GetCoin - coinChange: 2 - 
+[08:50:23]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:23]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:23]action: name: Jump - jumpHeight: 200.0 - 
+[08:50:23]action: name: GetCoin - coinChange: 1 - 
+[08:50:23]action: name: Jump - jumpHeight: 203.0 - 
+[08:50:23]action: name: Stomp - 
+[08:50:24]action: name: GetCoin - coinChange: 1 - 
+[08:50:24]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:24]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:24]action: name: GetCoin - coinChange: 1 - 
+[08:50:24]action: name: Jump - jumpHeight: 200.0 - 
+[08:50:24]action: name: Stomp - 
+[08:50:24]action: name: GetCoin - coinChange: 1 - 
+[08:50:24]action: name: HaveShell - 
+[08:50:24]action: name: GetCoin - coinChange: 1 - 
+[08:50:24]action: name: HaveShell - 
+[08:50:25]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:25]action: name: HaveShell - 
+[08:50:25]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:25]action: name: HaveShell - 
+[08:50:25]action: name: Jump - jumpHeight: 196.4 - 
+[08:50:25]action: name: HaveShell - 
+[08:50:26]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:26]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:26]action: name: GetCoin - coinChange: 1 - 
+[08:50:26]action: name: GetCoin - coinChange: 2 - 
+[08:50:26]action: name: Jump - jumpHeight: 200.0 - 
+[08:50:27]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:27]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:27]action: name: GetCoin - coinChange: 1 - 
+[08:50:27]action: name: Jump - jumpHeight: 200.0 - 
+[08:50:27]action: name: Jump - jumpHeight: 203.0 - 
+[08:50:27]action: name: Jump - jumpHeight: 208.55 - 
+[08:50:27]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:27]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:27]action: name: Jump - jumpHeight: 200.0 - 
+[08:50:27]action: name: Jump - jumpHeight: 203.0 - 
+[08:50:28]action: name: Jump - jumpHeight: 223.0 - 
+[08:50:28]action: name: Jump - jumpHeight: 209.7 - 
+[08:50:28]action: name: Jump - jumpHeight: 196.4 - 
+[08:50:28]action: name: Jump - jumpHeight: 185.0 - 
+[08:50:28]action: name: Jump - jumpHeight: 175.5 - 
+[08:50:28]action: name: Jump - jumpHeight: 167.9 - 
+[08:50:29]action: name: Jump - jumpHeight: 207.0 - 
+[08:50:29]action: name: Jump - jumpHeight: 193.7 - 
+[08:50:29]action: name: Jump - jumpHeight: 180.4 - 
+[08:50:29]action: name: Jump - jumpHeight: 169.0 - 
+[08:50:29]action: name: Stomp - 
+[08:50:30]action: name: Jump - jumpHeight: 207.0 - 
+[08:50:30]action: name: Jump - jumpHeight: 193.7 - 
+[08:50:30]action: name: Jump - jumpHeight: 180.4 - 
+[08:50:30]action: name: Jump - jumpHeight: 169.0 - 
+[08:50:30]action: name: Jump - jumpHeight: 159.5 - 
+[08:50:30]action: name: Jump - jumpHeight: 151.9 - 
+[08:50:30]action: name: Jump - jumpHeight: 146.2 - 
+[08:50:30]action: name: Jump - jumpHeight: 142.4 - 
+[08:50:30]action: name: Jump - jumpHeight: 145.56535 - 
+[08:50:30]action: name: Jump - jumpHeight: 150.74591 - 
+[08:50:30]action: name: Jump - jumpHeight: 158.14938 - 
+[08:50:30]action: name: Jump - jumpHeight: 167.44234 - 
+[08:50:30]action: name: Jump - jumpHeight: 178.34134 - 
+[08:50:30]action: name: Jump - jumpHeight: 190.6055 - 
+[08:50:30]action: name: Jump - jumpHeight: 191.0 - 
+[08:50:31]action: name: Jump - jumpHeight: 177.7 - 
+[08:50:31]action: name: Jump - jumpHeight: 164.4 - 
+[08:50:31]action: name: Jump - jumpHeight: 153.0 - 
+[08:50:31]action: name: Jump - jumpHeight: 143.5 - 
+[08:50:31]action: name: Jump - jumpHeight: 135.9 - 
+[08:50:31]action: name: Jump - jumpHeight: 130.2 - 
+[08:50:31]action: name: Jump - jumpHeight: 126.399994 - 
+[08:50:31]action: name: Jump - jumpHeight: 124.49999 - 
+[08:50:31]action: name: Jump - jumpHeight: 125.884995 - 
+[08:50:31]action: name: Jump - jumpHeight: 130.06224 - 
+[08:50:31]action: name: Jump - jumpHeight: 136.6129 - 
+[08:50:32]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:32]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:32]action: name: Jump - jumpHeight: 148.4 - 
+[08:50:32]action: name: Jump - jumpHeight: 137.0 - 
+[08:50:32]action: name: Jump - jumpHeight: 127.5 - 
+[08:50:32]action: name: Jump - jumpHeight: 119.9 - 
+[08:50:32]action: name: Jump - jumpHeight: 114.200005 - 
+[08:50:32]action: name: Jump - jumpHeight: 110.4 - 
+[08:50:32]action: name: Jump - jumpHeight: 108.5 - 
+[08:50:32]action: name: Jump - jumpHeight: 109.885 - 
+[08:50:32]action: name: Jump - jumpHeight: 114.062256 - 
+[08:50:32]action: name: Jump - jumpHeight: 120.612915 - 
+[08:50:32]action: name: Jump - jumpHeight: 129.18098 - 
+[08:50:32]action: name: Jump - jumpHeight: 139.46384 - 
+[08:50:33]action: name: Jump - jumpHeight: 161.17201 - 
+[08:50:33]action: name: Jump - jumpHeight: 166.01822 - 
+[08:50:33]action: name: Jump - jumpHeight: 173.1375 - 
+[08:50:33]action: name: Jump - jumpHeight: 182.18889 - 
+[08:50:33]action: name: Jump - jumpHeight: 192.88257 - 
+[08:50:33]action: name: Jump - jumpHeight: 204.9722 - 
+[08:50:34]action: name: Jump - jumpHeight: 207.0 - 
+[08:50:34]action: name: Jump - jumpHeight: 193.7 - 
+[08:50:34]action: name: Jump - jumpHeight: 180.4 - 
+[08:50:34]action: name: Jump - jumpHeight: 169.0 - 
+[08:50:34]action: name: Jump - jumpHeight: 159.5 - 
+[08:50:35]action: name: Stomp - 
+[08:50:35]action: name: HaveShell - 
+[08:50:35]action: name: Jump - jumpHeight: 207.0 - 
+[08:50:35]action: name: HaveShell - 
+[08:50:35]action: name: Jump - jumpHeight: 193.7 - 
+[08:50:35]action: name: HaveShell - 
+[08:50:35]action: name: Jump - jumpHeight: 180.4 - 
+[08:50:35]action: name: HaveShell - 
+[08:50:35]action: name: Jump - jumpHeight: 169.0 - 
+[08:50:35]action: name: HaveShell - 
+[08:50:35]action: name: Jump - jumpHeight: 159.5 - 
+[08:50:35]action: name: HaveShell - 
+[08:50:36]action: name: Jump - jumpHeight: 207.0 - 
+[08:50:36]action: name: Jump - jumpHeight: 193.7 - 
+[08:50:36]action: name: Jump - jumpHeight: 180.4 - 
+[08:50:36]action: name: Jump - jumpHeight: 169.0 - 
+[08:50:36]action: name: Jump - jumpHeight: 159.5 - 
+[08:50:36]action: name: Jump - jumpHeight: 151.9 - 
+[08:50:37]action: name: Jump - jumpHeight: 159.0 - 
+[08:50:37]action: name: Jump - jumpHeight: 145.7 - 
+[08:50:37]action: name: Jump - jumpHeight: 136.0 - 
+[08:50:37]action: name: Jump - jumpHeight: 139.0 - 
+[08:50:37]action: name: Jump - jumpHeight: 159.0 - 
+[08:50:37]action: name: Jump - jumpHeight: 145.7 - 
+[08:50:37]action: name: Jump - jumpHeight: 136.0 - 
+[08:50:37]action: name: Jump - jumpHeight: 139.0 - 
+[08:50:37]action: name: Jump - jumpHeight: 144.55 - 
+[08:50:37]action: name: Jump - jumpHeight: 159.0 - 
+[08:50:38]action: name: Jump - jumpHeight: 145.7 - 
+[08:50:38]action: name: GetCoin - coinChange: 1 - 
+[08:50:38]action: name: Jump - jumpHeight: 136.0 - 
+[08:50:38]action: name: Jump - jumpHeight: 159.0 - 
+[08:50:38]action: name: Jump - jumpHeight: 145.7 - 
+[08:50:38]action: name: Jump - jumpHeight: 132.4 - 
+[08:50:38]action: name: Jump - jumpHeight: 120.99999 - 
+[08:50:38]action: name: Jump - jumpHeight: 111.49999 - 
+[08:50:38]action: name: Jump - jumpHeight: 103.899994 - 
+[08:50:38]action: name: Jump - jumpHeight: 98.2 - 
+[08:50:38]action: name: Jump - jumpHeight: 94.399994 - 
+[08:50:39]action: name: Jump - jumpHeight: 175.0 - 
+[08:50:39]action: name: Jump - jumpHeight: 161.7 - 
+[08:50:39]action: name: Jump - jumpHeight: 148.4 - 
+[08:50:39]action: name: Jump - jumpHeight: 137.0 - 
+[08:50:39]action: name: Jump - jumpHeight: 127.5 - 
+[08:50:40]action: name: Jump - jumpHeight: 143.0 - 
+[08:50:40]action: name: Jump - jumpHeight: 129.7 - 
+[08:50:40]action: name: Jump - jumpHeight: 120.0 - 
+[08:50:40]action: name: Jump - jumpHeight: 123.0 - 
+[08:50:40]action: name: GetCoin - coinChange: 1 - 
+[08:50:40]action: name: Jump - jumpHeight: 143.0 - 
+[08:50:40]action: name: Jump - jumpHeight: 129.7 - 
+[08:50:40]action: name: Jump - jumpHeight: 120.0 - 
+[08:50:40]action: name: GetCoin - coinChange: 1 - 
+[08:50:41]action: name: Jump - jumpHeight: 143.0 - 
+[08:50:41]action: name: Jump - jumpHeight: 129.7 - 
+[08:50:41]action: name: Jump - jumpHeight: 116.399994 - 
+[08:50:41]action: name: Jump - jumpHeight: 104.99999 - 
+[08:50:41]action: name: Jump - jumpHeight: 95.49999 - 
+[08:50:41]action: name: Jump - jumpHeight: 87.899994 - 
+[08:50:41]action: name: Jump - jumpHeight: 82.2 - 
+[08:50:41]action: name: Jump - jumpHeight: 78.399994 - 
+[08:50:41]action: name: Jump - jumpHeight: 76.49999 - 
+[08:50:42]action: name: Jump - jumpHeight: 91.602844 - 
+[08:50:42]action: name: Jump - jumpHeight: 100.287865 - 
+[08:50:45]action: name: EnemyFireballDeath - 
+[08:50:45]action: name: FireballDisappear - 
+[08:50:46]action: name: Jump - jumpHeight: 207.0 - 
+[08:50:47]action: name: Jump - jumpHeight: 193.7 - 
+[08:50:47]action: name: Jump - jumpHeight: 180.4 - 
+[08:50:47]action: name: Jump - jumpHeight: 169.0 - 
+[08:50:47]action: name: Jump - jumpHeight: 159.5 - 
+[08:50:47]action: name: Jump - jumpHeight: 151.9 - 
+[08:50:47]action: name: Jump - jumpHeight: 146.2 - 
+[08:50:47]action: name: GetCoin - coinChange: 2 - 

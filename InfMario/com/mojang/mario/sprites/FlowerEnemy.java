@@ -11,7 +11,7 @@ public class FlowerEnemy extends Enemy
     
     public FlowerEnemy(LevelScene world, int x, int y)
     {
-        super(world, x, y, 1, ENEMY_SPIKY, false);
+        super(world, x, y, 1, ENEMY_SPIKY, false, 0);
         
         noFireballDeath = false;
         this.world = world;

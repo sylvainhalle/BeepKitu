@@ -1,0 +1,31 @@
+[13:24:41]action: name: Jump - jumpHeight: 207.0 - 
+[13:24:42]action: name: Jump - jumpHeight: 175.0 - 
+[13:24:42]action: name: GetCoin - coinChange: 1 - 
+[13:24:42]action: name: GetCoin - coinChange: 2 - 
+[13:24:42]action: name: Jump - jumpHeight: 175.0 - 
+[13:24:42]action: name: GetCoin - coinChange: 1 - 
+[13:24:42]action: name: Stomp - id: 47 - iswinged: false - 
+[13:24:42]action: name: EnemyDead - id: 47 - 
+[13:24:43]action: name: GetCoin - coinChange: 1 - 
+[13:24:43]action: name: Jump - jumpHeight: 175.0 - 
+[13:24:44]action: name: Jump - jumpHeight: 207.0 - 
+[13:24:45]action: name: Jump - jumpHeight: 191.0 - 
+[13:24:46]action: name: Jump - jumpHeight: 207.0 - 
+[13:24:46]action: name: GetCoin - coinChange: 1 - 
+[13:24:46]action: name: Jump - jumpHeight: 207.0 - 
+[13:24:47]action: name: Jump - jumpHeight: 191.0 - 
+[13:24:48]action: name: Jump - jumpHeight: 159.0 - 
+[13:24:49]action: name: Jump - jumpHeight: 191.0 - 
+[13:24:50]action: name: Jump - jumpHeight: 223.0 - 
+[13:24:51]action: name: Jump - jumpHeight: 175.0 - 
+[13:24:51]action: name: GetCoin - coinChange: 1 - 
+[13:24:51]action: name: Stomp - id: 48 - iswinged: false - 
+[13:24:51]action: name: GetCoin - coinChange: 1 - 
+[13:24:51]action: name: Stomp - id: 49 - iswinged: false - 
+[13:24:52]action: name: EnemyDead - id: 48 - 
+[13:24:52]action: name: EnemyDead - id: 49 - 
+[13:24:52]action: name: Jump - jumpHeight: 175.0 - 
+[13:24:53]action: name: GetCoin - coinChange: 1 - 
+[13:24:54]action: name: Jump - jumpHeight: 207.0 - 
+[13:24:55]action: name: Jump - jumpHeight: 223.0 - 
+[13:24:55]action: name: GetCoin - coinChange: 1 - 
